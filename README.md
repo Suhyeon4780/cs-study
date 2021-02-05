@@ -3,7 +3,7 @@ Computer Science Knowledge Repository
 
 
 
-## 소프트웨어공학 [Link](https://github.com/ChoboDeveloper/cs-study/blob/main/Software Engineering/software engineering.md)
+## 소프트웨어공학 [Link](https://github.com/ChoboDeveloper/cs-study/blob/main/Software-Engineering/software-engineering.md)
 
 
 
