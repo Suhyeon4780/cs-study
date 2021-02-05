@@ -5,7 +5,7 @@ Computer Science Knowledge Repository
 
 #### how to use
 
-https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiiyM7DkdLuAhXwyosBHTA6DU8QFjAAegQIAhAC&url=https%3A%2F%2Fgist.github.com%2Fihoneymon%2F652be052a0727ad59601&usg=AOvVaw1f7n5FGHUyM6FYPLdt4OtB
+[마크다운 작성법](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiiyM7DkdLuAhXwyosBHTA6DU8QFjAAegQIAhAC&url=https%3A%2F%2Fgist.github.com%2Fihoneymon%2F652be052a0727ad59601&usg=AOvVaw1f7n5FGHUyM6FYPLdt4OtB)
 
 <br>
 
