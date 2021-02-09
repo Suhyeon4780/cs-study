@@ -29,6 +29,6 @@
 14. Facade에 대해 설명하시오.
 
 15. 하기 도표의 각 정렬기법의 시간복잡도를 기재하시오.
-![sorting](/assets/photo.jpeg)
+![sorting](./assets/photo.jpeg)
 
 
