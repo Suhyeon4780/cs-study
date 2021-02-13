@@ -34,7 +34,7 @@
            
 
 
-   * S. SRP ; Singble Responsibility Princible. 단일책임의 원칙
+   * O. OCP ; Open Close Principle. 개방폐쇄의 원칙
 
           * 소프트웨어의 구성요소 (컴포넌트, 클래스, 모듈, 함수)는 **확장**에는 열려있고, **변경**에는 닫혀있어야 한다.
           * 변경을 위한 비용은 가능한 줄이고, 확장을 위한 비용을 가능한 극대화
