@@ -49,11 +49,16 @@
 |인터페이스상속|X|O|O|
 |구현상속|O|O|X|
 
-    * I. ISP ; Interface Segregation Principle. 인터페이스 분리의 원칙
-        * 클래스는 자신이 사용하지 않는 인터페이스는 구현하지 말아야 한다.
-    * D. DIP ; Dependency Inversion Principle. 의존성역전의 원칙
-        * 구조적 디자인에서 발생하던 하위 레빌 모듈의 변경이 상위 레벨 모듈의 변경을 요구하는 위계관계를 **끊는** 의미의 역전
+>  I. ISP ; Interface Segregation Principle. 인터페이스 분리의 원칙
+>
+> ​	클래스는 자신이 사용하지 않는 인터페이스는 구현하지 말아야 한다.
+>
+> D. DIP ; Dependency Inversion Principle. 의존성역전의 원칙
+>
+> ​	구조적 디자인에서 발생하던 하위 레벨 모듈의 변경이 상위 레벨 모듈의 변경을 요구하는 위계관계	를 끊는 의미의 역전
+
 <br>
+
 4. 객체지향 설계에서 정적/동적 모델링의 차이에 대해 설명하고 각각 사용되는 대표적인 UML 다이어그램은?
 
    [UML 모델링 설명](https://hyun-am-coding.tistory.com/entry/Chapter-14-UML-모델링)  [UML 모델링 설명 2](https://luv-n-interest.tistory.com/376)
