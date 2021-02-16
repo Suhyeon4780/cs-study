@@ -1,6 +1,6 @@
 # 정보보안 문제 답안
 
-[답안보기]([cs-study/answers.md at cbdevb · ChoboDeveloper/cs-study (github.com)](https://github.com/ChoboDeveloper/cs-study/blob/cbdevb/Security/answers.md)
+
 
 1. 기밀성, 무결성, 가용성
     자산이 인가(authorization)된 당사자에 의해서만 접근하는 것을 보장하는 것
