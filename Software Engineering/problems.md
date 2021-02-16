@@ -1,5 +1,7 @@
 # 소프트웨어 공학 문제
 
+[답안보기](https://github.com/ChoboDeveloper/cs-study/blob/main/Software%20Engineering/swengquiz_answer.md)
+
 1. 설계 품질을 위한 응집도와 결합도의 순서를 서술하시오.
 
 2. 럼바우의 분석기법에서 객체/기능/동적 모델링을 위한 도구를 서술하시오.
