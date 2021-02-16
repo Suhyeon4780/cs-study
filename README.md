@@ -27,8 +27,8 @@ Computer Science Knowledge Repository
 
 <br><br>
 
-## 정보보안 [Link](https://github.com/ChoboDeveloper/cs-study/blob/cbdevb/Security/security.md)
-[문제풀기](https://github.com/ChoboDeveloper/cs-study/blob/cbdevb/Security/problems.md)
+## 정보보안 [Link](https://github.com/ChoboDeveloper/cs-study/blob/main/Security/security.md)
+[문제풀기](https://github.com/ChoboDeveloper/cs-study/blob/main/Security/problems.md)
 <br><br>
 
 ## 네트워크
