@@ -9,9 +9,11 @@ Computer Science Knowledge Repository
 
 <br>
 
-## 소프트웨어공학 [Link](https://github.com/ChoboDeveloper/cs-study/blob/main/Software%20Engineering/software%20engineering.md)
+## 소프트웨어공학 [Link](https://github.com/ChoboDeveloper/cs-study/blob/main/Software-Engineering/software-engineering.md)
 
-[문제풀기](https://github.com/ChoboDeveloper/cs-study/blob/main/Software%20Engineering/problems.md)
+[문제풀기](https://github.com/ChoboDeveloper/cs-study/blob/main/Software-Engineering/problems.md)
+
+[답안](https://github.com/ChoboDeveloper/cs-study/blob/main/Software-Engineering/swengquiz_answer.md)
 
 <br><br>
 
