@@ -191,8 +191,7 @@
 
 15. 하기 도표의 각 정렬기법의 시간복잡도를 기재하시오.
        ![sorting](./assets/photo.jpeg)
-       
-       
+    
 22. Brook's Law 에 대해 설명하시오.
      * 22. Brook's Law 에 대해 설명하시오.
 
@@ -245,11 +244,9 @@
 		* 내부 논리 파일 Internal Logical File
 		* 외부 인터페이스 파일 External Interface File
 
-    
 25. 일정 계획에 필요한 작업순서인 하기의 각각에 대해 설명하시오.
 ; SDLC 선정 -> WBS -> CPM/PERT -> Gantt Chart
-
-	* SDLC 선정
+* SDLC 선정
 		* Software Development LifeCycle
 		* Software 생명 전반에 걸친 생명주기
 	* WBS (Work Break-down Structure)
@@ -268,20 +265,17 @@
 		* 프로젝트의 각 공정들이 언제 시작되고 종료되는지를 막대 도표로 표시.
 		* 여유시간 = 가장 늦은 착수일 - 가장 이른 착수일 = 임계경로 - 남은 작업
 	
-
 26. 하기의 임계경로를 구하라.
 
 ![cp](./assets/quiz26-cp.png)
 
+Start - A - C - I - K - L - End ; 55
 
-4. SDLC 선정 --> WBS --> CPM/PERT --> Gantt chart
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
 
 
 
