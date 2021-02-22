@@ -1,6 +1,6 @@
 # 소프트웨어 공학 문제
 
-[답안보기](https://github.com/ChoboDeveloper/cs-study/blob/main/Software%20Engineering/swengquiz_answer.md)
+[답안보기](https://github.com/ChoboDeveloper/cs-study/blob/main/Software-Engineering/swengquiz_answer.md)
 
 1. 설계 품질을 위한 응집도와 결합도의 순서를 서술하시오.
 
