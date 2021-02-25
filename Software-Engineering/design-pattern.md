@@ -4,10 +4,6 @@
 
 ### 분류하기
 
-|         생성패턴         | 구조패턴 | 행위패턴 |
-| :----------------------: | :------: | :------: |
-| <br><br/><br/><br/><br/> |          |          |
-
 
 
 ```
@@ -37,7 +33,7 @@
 
 * 다음과 같은 구조를 가진 디자인 패턴은?
 
-![adapter](C:\Users\cbdev\Desktop\취업준비\스터디_전공\adapter.PNG)
+![adapter](https://user-images.githubusercontent.com/75229881/109116194-7c042680-7783-11eb-8b2c-a3d387bc66fe.PNG)
 
 ---
 
