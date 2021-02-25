@@ -122,7 +122,7 @@
 
 ---
 
-### 디지털 포렌식의 원칙
+### 디지털 포렌식
 
 1. 정당성의 원칙
 
@@ -181,7 +181,7 @@ SQL 인젝션은 웹 사이트의 보안상 허점을 이용해 특정 SQL 쿼�
 
 ---
 
-### Common Criteria
+### CC
 
  국가마다 서로 다른 정보보호시스템 평가기준을 연동하고 평가결과를 상호 인증하기 위해 제정된 정보보안 평가기준
 
@@ -201,9 +201,86 @@ SQL 인젝션은 웹 사이트의 보안상 허점을 이용해 특정 SQL 쿼�
 
 ___
 
-### SSL
+### SSL 인증서
 
-* 작성중
+* Root 인증서는 세상 사람들이 모두 신뢰하기로 약속한 기관, 예를 들어 위에서 언급한 Geotrust 등의 기관에서 발행한 인증서가 된다. 이러한 인증서는 일반적으로 웹 브라우저 등에 미리 내장되어 있으며, 해당 인증서에 대응하는 공개 키 또한 인증서 내부에 포함되어 있다.
+* Google CA와 같은 CA회사의 인증서는 이러한 Root 인증서에 요청하여 root 인증서의 개인키를 통해 암호화되어 신뢰성을 보장받는다. 따라서, **Google CA의 인증서의 내용물에 대한 해시 값을, Geotrust가 Geotrust의 비밀 키로 암호화 해준것일테니, Google CA 또한 신뢰할 수 있다.**
+* 여기서 해시값은 인증서의 주요정보를 모아 SHA256등의 해쉬 알고리즘을 이용하여 해쉬를 수행하고, 이렇게 해서 나온 해시값을 인증서의 **Finger Print(지문)**이라고 한다. 이렇게 나온 해시값(Finger Print)을 발급자(issuer)(CA)의 개인키로 암호화한 값이 **서명값(Digital Signing)**이다.
+* CA의 공개키로 서명값을 복호화했을 때 이러한 해시값의 비교를 통해 해당 인증서의 무결성을 검증할 수 있다.
+* [참고자료]([154. [Security\] SSL과 인증서 구조 이해하기 : CA (Certificate Authority) 를 중심으로 : 네이버 블로그 (naver.com)](https://m.blog.naver.com/alice_k106/221468341565))
 
 ---
+
+### PKI
+
+* 구성 : 인증기관(CA), 등록대행기관(RA), Certificate Repository, 사용자
+* Certificate Repository는 인증서 및 인증서 폐기 목록(CRL)을 보관한다.
+* 사용자가 인증서를 RA에 신청하면 RA에서 신청자의 신분을 검증하여 해당 사용자의 인증서 발급을 CA에 요청하고, CA에서는 암호하 key 쌍(Public Key, Private Key)을 생성하여 개인키인 Private Key는 사용자에, Public Key를 포함한 인증서는 인증서 저장소(Certificate Repository)에 저장함
+
+
+
+---
+
+### 블록암호 모드
+
+* ECB모드
+  * 평문을 동일한 블럭으로 나눠서 같은 방식으로 암호화
+  * 패턴이 나타나기 때문에 안정성이 떨어진다.
+* CBC모드
+  * IV를 사용하고 앞의 블럭과 XOR 한 뒤 암호화
+  * 오류전이 발생
+* CFB모드
+  * IV를 사용하고 앞의 블럭을 암호화 한 뒤 XOR
+  * 오류전이 발생
+* OFB모드
+  * IV에 대한 연속적으로 암호화, 이를 평문블럭과 XOR
+* CTR 모드
+  * 카운터를 암호화, 이를 평문블럭과 XOR
+
+---
+
+### 의사 난수
+
+* 무작위성 :  비트 수의 출현 빈도가 동일해야한다. 즉, 특정 분포를 보여서는 안된다.
+* 비예측성 : 수열의 잇따른 다음 수의 순서에 대해 예측이 불가능해야한다.
+* 약한 의사 난수는 무작위성만을 가지고, 강한 의사 난수는 비 예측성을 포함한다. 이러한 비예측성을 생성하기 위해 비결정적 알고리즘이 사용될 수 있다.
+* True Random Number은 재현불가능성을 포함한다. 컴퓨터는 유한 오토마타이고 결국 시드값을 통해 난수를 생성하기 때문에 True Random Number를 구현하기 어렵다.
+
+---
+
+### 커버로스
+
+구성요소 : (Authentication Server, AS) / (Ticket Granting Service, TGS) / (Service Server, SS)
+
+AS는 TGS의 비밀키 공유, TGS는 SS의 비밀키를 공유
+
+1. 클라이언트가 아래 메시지를 AS로 전송
+   * User ID (암호화 되지않은 일반 텍스트)
+2. AS는 User ID가 DB에 존재하는지 찾아본 후 존재하는 경우 아래 두 메시지를 리턴
+   * encrypt(key: 클라이언트 PW기반 비밀키, data: “TGS 세션키”)
+   * 티켓을 발급받을 수 있는 티켓(Ticket-Granting-Ticket, TGT) = encrypt(TGS 비밀키, “Client ID, 주소, 유효기간, TGS 세션 키”)
+3. 클라이언트는 아래 두 메시지를 TGS로 전송 (TGS 세션키는 수신한 메시지를 복호화해서 획득)
+   * Authenticator = encrypt(key: TGS 세션키, data: “Client ID, timestamp”)
+   * TGT
+4. TGS는 전달받은 TGT(TGS 비밀키로 복호화 가능), 암호화된 Authenticator (TGS 세션키로 복호화 가능)를 모두 복호화 해서 안에 담긴 Client ID가 일치하는지 확인하여 일치할 경우 아래 두 메시지를 리턴
+   * encrypt(key: TGS 세션키, data: SS 세션키)
+   * Ticket = encrypt(key: SS 비밀키, data: “Client ID, 주소, 유효기간, SS 세션키”)
+5. 클라이언트는 아래 두 메시지를 SS로 전송
+   * Authenticator = encrypt(key: SS 세션키, data: “Client ID, timestamp”)
+   * Ticket(SGT)
+6. SS는 전달받은 Ticket, Authenticator를 복호화 해서 안에 담긴 Client ID일치 확인 후 일치할 경우 아래 메시지를 리턴
+   * encrypt(key: SS 세션키, data:Authenticator안에 담겨있던 timestamp)
+7. 클라이언트는 전달받은 timestamp와 자신이 Authenticator에 담아보냈던 timestamp의 값이 일치하는 확인 후, 일치할경우 실제 작업을 시작한다.  
+
+TGT : AS에서 발급, 로그인 세션 당 1번 발급
+
+SGT : TGS에서 발급, 주어진 시간 동안 사용가능
+
+---
+
+
+
+
+
+
 
