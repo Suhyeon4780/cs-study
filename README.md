@@ -30,8 +30,8 @@ Computer Science Knowledge Repository
 <br><br>
 
 ## 정보보안 [Link](https://github.com/ChoboDeveloper/cs-study/blob/main/Security/security.md)
-[공격](https://github.com/ChoboDeveloper/cs-study/blob/main/Security/security_attack.md)
-[암호학](https://github.com/ChoboDeveloper/cs-study/blob/main/Security/security_crypto.md)
+[공격](https://github.com/ChoboDeveloper/cs-study/blob/main/Security/security_attack.md)<br>
+[암호학](https://github.com/ChoboDeveloper/cs-study/blob/main/Security/security_crypto.md)<br>
 [명령어](https://github.com/ChoboDeveloper/cs-study/blob/main/Security/security_command.md)
 <br><br>
 
