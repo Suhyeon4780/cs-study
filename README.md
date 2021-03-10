@@ -17,7 +17,7 @@ Computer Science Knowledge Repository
 
 <br><br>
 
-## 데이터베이스
+## 데이터베이스 [Link](https://github.com/ChoboDeveloper/cs-study/blob/main/Database/database.md)
 
 <br><br>
 
@@ -26,6 +26,8 @@ Computer Science Knowledge Repository
 <br><br>
 
 ## 알고리즘/자료구조
+
+[C++STL](https://github.com/ChoboDeveloper/cs-study/blob/main/Algorithm/c%2B%2Bstl.md)
 
 <br><br>
 
