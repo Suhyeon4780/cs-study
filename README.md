@@ -9,32 +9,34 @@ Computer Science Knowledge Repository
 
 <br>
 
-## 소프트웨어공학 [Link](https://github.com/ChoboDeveloper/cs-study/blob/main/Software-Engineering/software-engineering.md)
+## 소프트웨어공학 [Link](https://github.com/ChoboDeveloper/cs-study/blob/main/1_Software-Engineering/software-engineering.md)
 
-[문제풀기](https://github.com/ChoboDeveloper/cs-study/blob/main/Software-Engineering/problems.md)
+[연습문제](https://github.com/ChoboDeveloper/cs-study/blob/main/1_Software-Engineering/problems.md)
 
-[답안](https://github.com/ChoboDeveloper/cs-study/blob/main/Software-Engineering/swengquiz_answer.md)
-
-<br><br>
-
-## 데이터베이스 [Link](https://github.com/ChoboDeveloper/cs-study/blob/main/Database/database.md)
+[디자인패턴](https://github.com/ChoboDeveloper/cs-study/blob/main/1_Software-Engineering/design-pattern.md)
 
 <br><br>
 
-## OS/컴퓨터구조
+## 데이터베이스 [Link](https://github.com/ChoboDeveloper/cs-study/blob/main/2_Database/database.md)
 
 <br><br>
 
-## 알고리즘/자료구조
-
-[C++STL](https://github.com/ChoboDeveloper/cs-study/blob/main/Algorithm/c%2B%2Bstl.md)
+## OS/컴퓨터구조 [Link](https://github.com/ChoboDeveloper/cs-study/blob/main/3_OS/os.md)
 
 <br><br>
 
-## 정보보안 [Link](https://github.com/ChoboDeveloper/cs-study/blob/main/Security/security.md)
-[공격](https://github.com/ChoboDeveloper/cs-study/blob/main/Security/security_attack.md)<br>
-[암호학](https://github.com/ChoboDeveloper/cs-study/blob/main/Security/security_crypto.md)<br>
-[명령어](https://github.com/ChoboDeveloper/cs-study/blob/main/Security/security_command.md)
+## 정보보안 [Link](https://github.com/ChoboDeveloper/cs-study/blob/main/4_Security/security.md)
+[공격](https://github.com/ChoboDeveloper/cs-study/blob/main/4_Security/security_attack.md)  
+[암호학](https://github.com/ChoboDeveloper/cs-study/blob/main/4_Security/security_crypto.md)  
+[명령어](https://github.com/ChoboDeveloper/cs-study/blob/main/4_Security/security_command.md)  
+[프로토콜](https://github.com/ChoboDeveloper/cs-study/blob/main/4_Security/security_protocol.md)
+
+<br><br>
+
+## 프로그래밍
+
+[C++STL](https://github.com/ChoboDeveloper/cs-study/blob/main/5_Programming/c%2B%2Bstl.md)
+
 <br><br>
 
 ## 네트워크
