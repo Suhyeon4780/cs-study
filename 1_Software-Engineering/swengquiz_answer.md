@@ -1,5 +1,7 @@
 # 소프트웨어 공학 문제 답안
 
+[문제보기](https://github.com/ChoboDeveloper/cs-study/blob/main/1_Software-Engineering/problems.md)
+
 1. 설계 품질을 위한 응집도와 결합도의 순서를 서술하시오.
 
 * 응집도 ; 하나의 모듈이 하나의 기능을 수행하는 요소들의 연관성 척도
