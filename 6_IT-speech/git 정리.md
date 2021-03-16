@@ -69,3 +69,7 @@ $ git merge (브랜치 이름)
 
 ~~혹시 반영 안 되어 있으면 push를 해준다~~ 
 
+# 4. 포크한 깃허브 저장소를 원본 저장소와 동기화 하기
+https://hyunjun19.github.io/2018/03/09/github-fork-syncing/
+
+
