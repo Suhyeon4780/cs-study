@@ -9,10 +9,10 @@
 * AH(Authentication Header)
   * 정보의 **인증**, **무결성**을 제공한다.
 * ESP(Encapsulation Security Payload)
-  * IP 페이로드를 암호화하여 **기밀성**을 제공함으로써 제3자에게 데이터가 노출되는 것을 차단한다.
+  * IP 페이로드를 암호화하여 **기밀성, 인증, 무결성**을 제공
 * IKE(Internet key Exchange)
   * 키 교환에 사용되는 프로토콜이며 UDP 500 포트를 사용
-  * 두 컴퓨터 간의 보안 연결 설정을 위해 사용된다.
+  * 대칭키 교환을 위해 DH를 활용한 IKE를 사용
 * 모드
   * 전송모드
     * 헤더와 페이로드 사이에 AH/ESP가 위치한다.
